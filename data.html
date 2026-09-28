@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data explorer — tariff rates, trade and impact figures | Tariff Impact India</title>
+<meta name="description" content="Charts and tables of the underlying data: the US tariff rate on Indian goods over time, competitor tariff rates, India's export basket, monthly trade performance, category growth and the range of impact estimates.">
+<meta name="theme-color" content="#0c1f3d">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">
+        <span class="brand-name">Tariff Impact India</span>
+        <span class="brand-sub">Impact &amp; response tracker</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="index.html">Overview</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="impact.html">Impact</a>
+      <a href="response.html">Response</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="regions.html">Regions</a>
+      <a href="economy.html">Economy</a>
+      <a href="global.html">Global</a>
+      <a href="outlook.html">Outlook</a>
+      <a href="data.html" aria-current="page">Data</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle>
+      <span class="theme-toggle-icon" aria-hidden="true">&#9686;</span>
+      <span data-theme-label>Auto</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Overview</a> <span aria-hidden="true">&rsaquo;</span> <span>Data explorer</span>
+      </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle>
+      <span class="theme-toggle-icon" aria-hidden="true">&#9686;</span>
+      <span data-theme-label>Auto</span>
+    </button>
+      <span class="eyebrow">Data explorer</span>
+      <h1 class="h1">Every chart and table in one place</h1>
+      <p class="lede">
+        The complete dataset behind the site. Each figure is traceable to a source listed on
+        the <a href="sources.html" style="color:#ffb95e">sources page</a>, and the
+        conventions used are set out in the methodology there.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="stat-grid">
+        <div class="stat accent-navy reveal">
+          <div class="stat-label">Primary sources</div>
+          <div class="stat-value"><span data-count="22">22</span></div>
+          <div class="stat-note">News, official, industry and research sources, listed in full.</div>
+        </div>
+        <div class="stat accent-saffron reveal">
+          <div class="stat-label">Chronology entries</div>
+          <div class="stat-value"><span data-count="17">17</span></div>
+          <div class="stat-note">Dated events between 2 Apr 2025 and 18 Sep 2026.</div>
+        </div>
+        <div class="stat accent-green reveal">
+          <div class="stat-label">Sectors covered</div>
+          <div class="stat-value"><span data-count="6">6</span></div>
+          <div class="stat-note">Each with metrics, effects and current status.</div>
+        </div>
+        <div class="stat accent-amber reveal">
+          <div class="stat-label">Last verified</div>
+          <div class="stat-value" data-last-verified>—</div>
+          <div class="stat-note">Tariff policy remained subject to litigation and appeal at that date.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid-sidebar">
+        <div>
+
+          <section id="rates">
+            <div class="section-head">
+              <span class="eyebrow">Chart 1</span>
+              <h2 class="h2">The tariff rate over time</h2>
+              <p>
+                The additional US duty on Indian goods, in per cent, over and above standard
+                MFN rates. The step form reflects discrete policy decisions rather than
+                gradual adjustment.
+              </p>
+            </div>
+            <div class="chart-card reveal">
+              <div class="chart-title">Additional US duty on Indian goods, on top of MFN</div>
+              <div class="chart-sub">Hover any point for the rate and the event that set it. Shaded band marks the punitive zone above 25%.</div>
+              <div data-render="rate-chart"></div>
+              <div class="legend">
+                <span class="legend-item"><span class="legend-swatch" style="background:#b3261e"></span> Escalation</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#0f7a3d"></span> Relief</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#6b3fa0"></span> Legal decision</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#132c52"></span> Negotiation</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#e07800"></span> Indian domestic measure</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#7f1d1d"></span> Threat</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="competitiveness" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Chart 2 &amp; 3</span>
+              <h2 class="h2">Competitiveness against rivals</h2>
+              <p>
+                India&rsquo;s relative position changed twice: first adversely, when the 25%
+                duty landed and CareEdge judged its tariff advantage over Vietnam, Indonesia
+                and South Korea to have reversed; then favourably, at the February 2026 reset
+                to 18%.
+              </p>
+            </div>
+            <div class="grid grid-2">
+              <div class="chart-card reveal">
+                <div class="chart-title">Current rate by economy</div>
+                <div class="chart-sub">Economy-wide reciprocal rates only. India highlighted.</div>
+                <div data-render="competitor-chart"></div>
+              </div>
+              <div class="chart-card reveal">
+                <div class="chart-title">Announced versus current</div>
+                <div class="chart-sub">The 2 April 2025 announcement against the post-February 2026 position.</div>
+                <div data-render="competitor-shift"></div>
+              </div>
+            </div>
+            <div class="mt-3" data-render="competitor-table"></div>
+          </section>
+
+          <section id="basket" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Chart 4</span>
+              <h2 class="h2">The export basket</h2>
+              <p>
+                Composition of India&rsquo;s $87 billion of merchandise exports to the US in
+                FY25. The three largest lines account for roughly 41% of the total and
+                determine the tariff exposure of the whole relationship.
+              </p>
+            </div>
+            <div class="chart-card reveal">
+              <div class="chart-title">Merchandise exports to the US by category, FY25</div>
+              <div class="chart-sub">Share of total, per cent.</div>
+              <div data-render="basket-chart"></div>
+            </div>
+          </section>
+
+          <section id="estimates" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Chart 5</span>
+              <h2 class="h2">Impact estimates, as ranges</h2>
+              <p>
+                Deliberately not presented as a single figure. The disagreement between
+                institutions is itself informative: it reflects different definitions of
+                exposure and different assumptions about who absorbs the tariff.
+              </p>
+            </div>
+            <div class="chart-card reveal">
+              <div class="chart-title">Published estimates of the impact on India</div>
+              <div class="chart-sub">Low and high bound as reported by each institution.</div>
+              <div data-render="cost-range"></div>
+            </div>
+            <div class="mt-3" data-render="cost-estimates"></div>
+          </section>
+
+          <section id="exposure" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Chart 6</span>
+              <h2 class="h2">Who is exposed under the current regime</h2>
+              <p>
+                Under the Section 301 duties effective from July 2026, product exemptions keep
+                roughly 45% of India&rsquo;s US-bound exports outside the new levy.
+              </p>
+            </div>
+            <div class="chart-card reveal">
+              <div class="chart-title">Exempt versus liable, July 2026</div>
+              <div class="chart-sub">Share of India&rsquo;s US-bound exports.</div>
+              <div data-render="exposed-split"></div>
+              <p class="chart-foot">
+                Commerce Ministry statement, 25 July 2026. Exemptions cover generic
+                pharmaceuticals, smartphones, steel, aluminium and auto parts.
+              </p>
+            </div>
+          </section>
+
+          <section id="trade" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Charts 7 &amp; 8</span>
+              <h2 class="h2">Trade performance</h2>
+              <p>
+                Merchandise exports recovered strongly in the year after the peak, with
+                electronics and petroleum products leading. The trade deficit widened over
+                the same period, since imports grew faster.
+              </p>
+            </div>
+            <div class="grid grid-2">
+              <div class="chart-card reveal">
+                <div class="chart-title">Merchandise exports, April to July cumulative</div>
+                <div class="chart-sub">US$ billion, year on year.</div>
+                <div data-render="exports-chart"></div>
+              </div>
+              <div class="chart-card reveal">
+                <div class="chart-title">Category growth, July 2026</div>
+                <div class="chart-sub">Per cent year on year.</div>
+                <div data-render="category-chart"></div>
+              </div>
+            </div>
+            <div class="mt-3" data-render="monthly-table"></div>
+          </section>
+
+          <section id="diversification" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Chart 9</span>
+              <h2 class="h2">Diversification performance</h2>
+              <p>
+                Textile export growth by destination, April 2025 to February 2026. Growth from
+                small bases is large in percentage terms; the UAE, at 22.3%, is the more
+                meaningful number by volume.
+              </p>
+            </div>
+            <div class="chart-card reveal">
+              <div class="chart-title">Textile export growth by market</div>
+              <div class="chart-sub">Per cent year on year, April 2025 to February 2026.</div>
+              <div data-render="diversification-chart"></div>
+            </div>
+          </section>
+
+          <section id="section232" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Chart 10</span>
+              <h2 class="h2">Unchanged measures</h2>
+              <p>
+                Section 232 duties applied on national-security grounds to all US trading
+                partners throughout this period and were not altered at any point.
+              </p>
+            </div>
+            <div class="grid grid-2">
+              <div class="chart-card reveal">
+                <div class="chart-title">Section 232 rates by sector</div>
+                <div class="chart-sub">Not India-specific.</div>
+                <div data-render="section232-chart"></div>
+              </div>
+              <div class="reveal" data-render="section232-table"></div>
+            </div>
+          </section>
+
+          <section id="chronology" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Table</span>
+              <h2 class="h2">Full chronology as data</h2>
+              <p>The same eighteen months in tabular form, for reference or export.</p>
+            </div>
+            <div data-render="timeline-table"></div>
+          </section>
+
+          <section id="macro" class="mt-4">
+            <div class="section-head">
+              <span class="eyebrow">Reference</span>
+              <h2 class="h2">Macro context figures</h2>
+              <p>The external-sector numbers that frame every other figure on this site.</p>
+            </div>
+            <div data-render="macro-list"></div>
+          </section>
+
+        </div>
+
+        <aside class="toc">
+          <h4>On this page</h4>
+          <ol>
+            <li><a href="data.html#rates">Tariff rate over time</a></li>
+            <li><a href="data.html#competitiveness">Competitiveness</a></li>
+            <li><a href="data.html#basket">Export basket</a></li>
+            <li><a href="data.html#estimates">Impact estimates</a></li>
+            <li><a href="data.html#exposure">Current exposure</a></li>
+            <li><a href="data.html#trade">Trade performance</a></li>
+            <li><a href="data.html#diversification">Diversification</a></li>
+            <li><a href="data.html#section232">Section 232</a></li>
+            <li><a href="data.html#chronology">Chronology table</a></li>
+            <li><a href="data.html#macro">Macro context</a></li>
+          </ol>
+          <h4 class="mt-3">Method</h4>
+          <ol style="list-style:none;padding:0">
+            <li><a href="sources.html#method">Conventions &amp; limits</a></li>
+            <li><a href="sources.html">Full source list</a></li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight section-alt">
+    <div class="wrap">
+      <div class="pager">
+        <a class="pager-link" href="glossary.html">
+          <div class="pager-label">Previous</div>
+          <div class="pager-title">&larr; Glossary</div>
+        </a>
+        <a class="pager-link pager-next" href="sources.html">
+          <div class="pager-label">Next</div>
+          <div class="pager-title">Sources &amp; method &rarr;</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name" style="color:#fff">Tariff Impact India</span>
+            <span class="brand-sub">Impact &amp; response tracker</span>
+          </span>
+        </div>
+        <div class="disclaimer">
+          <strong>Independent informational project.</strong> Not affiliated with, endorsed by,
+          or representing the Government of India, the US administration, or any trade body
+          cited. Figures reproduced from the sources on the <a href="sources.html">sources page</a>,
+          last verified <span data-last-verified>—</span>. Nothing here is investment, trade or
+          legal advice.
+        </div>
+      </div>
+      <div>
+        <h4>The story</h4>
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="timeline.html">Chronology</a></li>
+          <li><a href="impact.html">Impact &amp; consequences</a></li>
+          <li><a href="sectors.html">Sector deep-dive</a></li>
+          <li><a href="regions.html">Regions &amp; clusters</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reference</h4>
+        <ul>
+          <li><a href="economy.html">Economy, currency &amp; jobs</a></li>
+          <li><a href="global.html">Global context</a></li>
+          <li><a href="outlook.html">Outlook &amp; scenarios</a></li>
+          <li><a href="data.html">Data explorer</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="sources.html">Sources &amp; method</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>Tariff Impact India &mdash; informational frontend, no build step required.</span>
+      <span>Figures verified <span data-last-verified>—</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
